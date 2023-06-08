@@ -7,6 +7,7 @@ const Layout = () => {
         <main>
             <Header />
             <hr />
+            <hr style={{marginBottom: "2rem"}}/>
             <Outlet/>
         </main>
     )
