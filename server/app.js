@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 
 const cors=require('cors');
-app.use(cors({credentials: true, origin: 'https://insightly-frontend.onrender.com/'}));
+app.use(cors({credentials: true, origin: 'https://insightly-frontend.onrender.com'}));
 
 const connectDB=require("./config/db");
 connectDB();
