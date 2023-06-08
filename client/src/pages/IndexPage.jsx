@@ -7,7 +7,7 @@ const IndexPage = () => {
 
   useEffect(()=>
   {
-    fetch('http://localhost:5000/post').then(response=>
+    fetch('https://insightly-backend.onrender.com/post').then(response=>
       {
         response.json().then(posts=>
           {

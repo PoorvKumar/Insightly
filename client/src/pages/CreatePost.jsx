@@ -55,7 +55,7 @@ const CreatePost = () => {
 
     ev.preventDefault();
 
-    const response =await fetch('http://localhost:5000/post',
+    const response =await fetch('https://insightly-backend.onrender.com/post',
     {
         method: "POST",
         body: data,

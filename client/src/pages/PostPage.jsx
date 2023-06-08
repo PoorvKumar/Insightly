@@ -7,7 +7,7 @@ const PostPage = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/post/${id}`).then((response) => {
+    fetch(`https://insightly-backend.onrender.com/post/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setPostInfo(postInfo);
       });
@@ -24,7 +24,7 @@ const PostPage = () => {
       <time>{formatISO9075(new Date(postInfo.createdAt))}</time>
       <div className="author">by @{postInfo.author.username}</div>
       <div className="image">
-        <img src={`http://localhost:5000/${postInfo.cover}`} alt="Cover" />
+        <img src={`https://insightly-backend.onrender.com/${postInfo.cover}`} alt="Cover" />
       </div>
       <div className="content" dangerouslySetInnerHTML={{ __html: postInfo.content }} />
     </div>

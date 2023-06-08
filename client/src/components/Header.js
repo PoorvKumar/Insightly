@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(()=>
   {
-    fetch('http://localhost:5000/profile',
+    fetch('https://insightly-backend.onrender.com/profile',
     {
       credentials: 'include'
     })
@@ -27,7 +27,7 @@ const Header = () => {
 
   function logout()
   {
-    fetch('http://localhost:5000/logout',
+    fetch('https://insightly-backend.onrender.com/logout',
     {
       credentials: 'include',
       method: "POST"
